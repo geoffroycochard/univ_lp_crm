@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+    <h1>Dashboard</h1>
+
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+            <div class="cell">
+                <div class="card">
+                    <div class="card-section text-center">
+                        <h4>Gérer les contacts</h4>
+                        <p><a class="button" href="{{ path('contact_index') }}">Voir</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="card">
+                    <div class="card-section text-center">
+                        <h4>Gérer les opportunités</h4>
+                        <p><a class="button" href="{{ path('opportunity_index') }}">Voir</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="card">
+                    <div class="card-section text-center">
+                        <h4>Gérer les produits</h4>
+                        <p><a class="button" href="{{ path('product_index') }}">Voir</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
