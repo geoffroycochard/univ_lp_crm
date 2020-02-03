@@ -1,30 +1,18 @@
 # CRM / Gestion des opportunitées en fonction d'une liste de produits.
 
-Nous voulons créer une application qui va nous servir à gérer nos potentiels clients 
-suite à un échange.
+Nous voulons créer une application qui va nous servir à gérer nos potentiels clients suite à un échange.
 
 Process : 
  * Je définie la personne que j'ai en face de moi (contact)
- * Il est interessé par des produits, je crée une opportinité en fonction de ses besoins (dans un catalogue simple)
+ * Il est interessé par des produits, je crée une opportunité en fonction de ses besoins (dans un catalogue simple)
  
 # Installation
 
-Clone du dépôt :
-
-`````bash
-$ git clone https://github.com/geoffroycochard/univ_lp_crm.git
-````` 
-
-Installation des dépendances php
-`````bash
-$ composer install
-````` 
-
-Installation des dépendances frontend et compilation
-`````bash
-$ yarn intall
-$ yarn dev
-`````
+Cloner le dépôt, et y installer / initialiser
+ * les dépendances php
+ * les dépendances frontend et les compiler (webpack-encore)
+ * la base de donnée sqlite
+ * le data model et [ses fixtures](https://github.com/geoffroycochard/univ_lp_crm/blob/master/src/DataFixtures/AppFixtures.php) `$ bin/console doctrine:fixtures:load` 
 
 # Fonctionnalités de l'application
 
@@ -37,6 +25,7 @@ plusieurs opportunités. Il faut que ce champs soit visible et modifiable dans l
 
 Le potentiel de l'opportunité est dirigé par une sorte "de panier". Il faut que ce champs là soit visible et modifiable dans le CRUD.
 
-## Valeur estimé de l'opportunité
+## Valeur estimée de l'opportunité
 
 Créer un nouveau champs "estimatedValue" dans opportunité qui permet de faire la somme des produits associés à chaque modification de l'opportunité.
+Afficher cette somme dans la liste des opportunités et dans la vue single
