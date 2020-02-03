@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <th>Price</th>
-                <td>{{ product.price }}</td>
+                <td>{{ product.price|format_currency('EUR', {rounding_mode: 'floor'}) }}</td>
             </tr>
         </tbody>
     </table>

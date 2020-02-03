@@ -86,6 +86,16 @@ class EnumStatusType extends Type
         return [self::STATUS_OPEN, self::STATUS_IN_PROGRESS, self::STATUS_WON, self::STATUS_LOST ];
     }
 
+    public static function getValuesForm()
+    {
+        return [
+            'Ouvert' => self::STATUS_OPEN,
+            'En cours' => self::STATUS_IN_PROGRESS,
+            'Gagné' => self::STATUS_WON,
+            'Perdu' => self::STATUS_LOST
+        ];
+    }
+
     /**
      * Gets the name of this type.
      *
