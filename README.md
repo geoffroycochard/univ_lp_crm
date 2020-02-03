@@ -29,3 +29,16 @@ $ yarn dev
 `````
 
 # Fonctionnalité de l'application
+
+## Opportunité pour un contact
+
+Comme indiqué dans le process il faut qu'une opportunité soit associée à un contact qui peut avoir 
+plusieurs opportunités.
+
+## Opportunité composé de plusieurs produits
+
+Le potentiel de l'opportunité est dirigé par une sorte "de panier".
+
+## Valeur estimé de l'opportunité
+
+Créer un nouveau champs "estimatedValue" dans opportunité qui permet de faire la somme des produits associés à chaque modification de l'opportunité.
