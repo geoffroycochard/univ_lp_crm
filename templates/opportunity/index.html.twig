@@ -23,8 +23,8 @@
                 <td>{{ opportunity.date ? opportunity.date|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ opportunity.status }}</td>
                 <td>
-                    <a href="{{ path('opportunity_show', {'id': opportunity.id}) }}">show</a>
-                    <a href="{{ path('opportunity_edit', {'id': opportunity.id}) }}">edit</a>
+                    <a href="{{ path('opportunity_show', {'id': opportunity.id}) }}" class="button primary">show</a>
+                    <a href="{{ path('opportunity_edit', {'id': opportunity.id}) }}" class="button secondary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -35,5 +35,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('opportunity_new') }}">Create new</a>
+    <a href="{{ path('opportunity_new') }}" class="button primary">Create new</a>
 {% endblock %}
