@@ -20,24 +20,22 @@ Installation des dépendances php
 $ composer install
 ````` 
 
-
-
 Installation des dépendances frontend et compilation
 `````bash
 $ yarn intall
 $ yarn dev
 `````
 
-# Fonctionnalité de l'application
+# Fonctionnalités de l'application
 
 ## Opportunité pour un contact
 
 Comme indiqué dans le process il faut qu'une opportunité soit associée à un contact qui peut avoir 
-plusieurs opportunités.
+plusieurs opportunités. Il faut que ce champs soit visible et modifiable dans le CRUD.
 
 ## Opportunité composé de plusieurs produits
 
-Le potentiel de l'opportunité est dirigé par une sorte "de panier".
+Le potentiel de l'opportunité est dirigé par une sorte "de panier". Il faut que ce champs là soit visible et modifiable dans le CRUD.
 
 ## Valeur estimé de l'opportunité
 

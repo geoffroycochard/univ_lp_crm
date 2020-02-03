@@ -16,7 +16,9 @@ class OpportunityType extends AbstractType
 
         $builder
             ->add('topic')
-            ->add('date')
+            ->add('date', null, [
+                'widget' => 'single_text'
+            ])
             ->add('status', ChoiceType::class, [
                 'choices' => EnumStatusType::getValuesForm()
             ])
